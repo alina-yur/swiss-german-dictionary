@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS translation (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     english VARCHAR(255) NOT NULL,
-    german VARCHAR(255) NOT NULL
+    translation VARCHAR(255) NOT NULL
 );

@@ -1,5 +1,5 @@
-INSERT INTO translation (english, german) VALUES ('Hello', 'Grüezi');
-INSERT INTO translation (english, german) VALUES ('Thank you', 'Merci vielmal');
-INSERT INTO translation (english, german) VALUES ('Goodbye', 'Ade');
-INSERT INTO translation (english, german) VALUES ('Bread', 'Brötli');
-INSERT INTO translation (english, german) VALUES ('Cat', 'Büsi');
+INSERT INTO translation (english, translation) VALUES ('Thank you', 'Merci vielmal');
+INSERT INTO translation (english, translation) VALUES ('Have a nice meal', 'En guete!');
+INSERT INTO translation (english, translation) VALUES ('Goodbye', 'Ade');
+INSERT INTO translation (english, translation) VALUES ('Bread', 'Brötli');
+INSERT INTO translation (english, translation) VALUES ('Cat', 'Büsi');

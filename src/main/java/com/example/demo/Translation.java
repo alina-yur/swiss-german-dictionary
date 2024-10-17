@@ -8,26 +8,22 @@ import jakarta.persistence.Id;
 @Entity
 public class Translation {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue()
     private Long id;
     private String english;
-    private String german;
+    private String translation;
 
     public Translation() {
 
     }
 
-    public Translation(String english, String german) {
+    public Translation(String english, String translation) {
         this.english = english;
-        this.german = german;
+        this.translation = translation;
     }
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getEnglish() {
@@ -38,12 +34,12 @@ public class Translation {
         this.english = english;
     }
 
-    public String getGerman() {
-        return german;
+    public String getTranslation() {
+        return translation;
     }
 
-    public void setGerman(String german) {
-        this.german = german;
+    public void setTranslation(String translation) {
+        this.translation = translation;
     }
 
 }
