@@ -14,7 +14,7 @@ sleep 5
 print "Done waiting for the app to come up..."
 
 print "Starting the benchmark"
-hey -n=500000 http://localhost:8080/translations
+oha -n=1000000 http://localhost:8080/translations
 
 print "Done!"
 kill $PID
