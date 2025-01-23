@@ -1,4 +1,4 @@
-# Swiss German dictionary
+# Swiss German Dictionary
 
 This is a sample project that showcases the integration between Spring Boot, GraalVM, and H2.
 
