@@ -10,9 +10,9 @@
 		<!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>dictionary</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>dictionary</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
 	<licenses>
@@ -76,8 +76,10 @@
 				<groupId>org.graalvm.buildtools</groupId>
 				<artifactId>native-maven-plugin</artifactId>
 				<configuration>
+					<imageName>dictionary</imageName>
 					<buildArgs>
-						<buildArg>-Ob</buildArg>
+						<buildArg>-g</buildArg>
+						<buildArg>-H:+SourceLevelDebug</buildArg>
 					</buildArgs>
 				</configuration>
 			</plugin>

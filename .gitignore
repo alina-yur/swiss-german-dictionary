@@ -34,3 +34,5 @@ build/
 
 default.iprof
 *.png
+*.svg
+*.data
