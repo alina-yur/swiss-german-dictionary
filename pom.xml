@@ -77,10 +77,6 @@
 				<artifactId>native-maven-plugin</artifactId>
 				<configuration>
 					<imageName>dictionary</imageName>
-					<buildArgs>
-						<buildArg>-g</buildArg>
-						<buildArg>-H:+SourceLevelDebug</buildArg>
-					</buildArgs>
 				</configuration>
 			</plugin>
 			<plugin>
