@@ -64,6 +64,9 @@
 				<artifactId>native-maven-plugin</artifactId>
 				<configuration>
 					<imageName>dictionary</imageName>
+					<buildArgs>
+						<buildArg>-Ob</buildArg>
+					</buildArgs>
 				</configuration>
 			</plugin>
 			<plugin>
