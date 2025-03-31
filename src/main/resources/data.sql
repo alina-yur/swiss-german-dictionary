@@ -3,3 +3,5 @@ INSERT INTO translation (english, translation) VALUES ('Have a nice meal', 'En g
 INSERT INTO translation (english, translation) VALUES ('Goodbye', 'Ade');
 INSERT INTO translation (english, translation) VALUES ('Bread', 'Brötli');
 INSERT INTO translation (english, translation) VALUES ('Cat', 'Büsi');
+INSERT INTO translation (english, translation) VALUES ('Carrot', 'Rüebli');
+INSERT INTO translation (english, translation) VALUES ('Chocolate', 'Schoggi');
