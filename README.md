@@ -14,3 +14,4 @@ mvn spring-boot:run
 mvn -Pnative native:compile
 ./target/dictionary
 ```
+You can also do performance benchmarking with tools like `hey` and `wrk2`.
