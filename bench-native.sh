@@ -8,7 +8,7 @@ print "Starting the native app..."
 
 ./target/demo -Xmx512m &
 export PID=$!
-psrecord $PID --plot "$(date +%s)-native.png" --max-cpu 3000 --max-memory 100 --include-children &
+psrecord $PID --plot "$(date +%s)-native.png" --max-cpu 3000 --max-memory 1000 --include-children &
 
 sleep 5
 print "Done waiting for the app to come up..."
