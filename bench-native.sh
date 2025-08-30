@@ -6,15 +6,18 @@ function print() {
 
 print "Starting the native app..."
 
-./target/demo-original -Xmx512m &
+./target/demo -Xmx512m &
 export PID=$!
-psrecord $PID --plot "$(date +%s)-native.png" --max-cpu 2500 --max-memory 800 --include-children &
+psrecord $PID --plot "$(date +%s)-native.png" --max-cpu 3000 --max-memory 100 --include-children &
 
 sleep 5
 print "Done waiting for the app to come up..."
 
-print "Starting the benchmark"
-hey -n=500000 http://localhost:8080/translations
+print "Starting the first iteration 1️⃣"
+hey -n=100000 http://localhost:8080/translations
+
+print "Starting the second iteration 2️⃣"
+hey -n=100000 http://localhost:8080/translations
 
 print "Done!"
 kill $PID
